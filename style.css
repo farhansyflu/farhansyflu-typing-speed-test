@@ -1,0 +1,151 @@
+body{
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(135deg,rgb(242, 230, 255),rgb(255, 74, 255),rgb(255, 75, 198));
+    background-size: 300%;  
+    animation: backgroundColor 6s ease-in-out infinite ;  
+}
+
+@keyframes backgroundColor {
+    0%{background-position: left;}
+    50%{background-position: right;}
+    100%{background-position: left;}
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 40px;
+    background:linear-gradient(45deg,rgba(255, 255, 255, 0.094),rgba(255, 255, 255, 0.345),rgba(255, 255, 255, 0.5));
+    border: 1px solid white;
+    box-shadow: 0 8px 32px 0px white;
+    width: 70%;
+    height: 70%;
+    max-width: 600px;
+}
+
+.text-to-type{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.input-text{
+    resize: none;
+    width: 90%;;
+    height: 280px;
+    border-radius: 25px;
+    border: none;
+    padding: 20px;
+    font-family: "Onest", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+button{
+padding: 10px;
+width: 70px;
+border: 1px solid rgb(255, 48, 255);
+box-shadow: 0 2px 8px 0 rgb(255, 96, 255);
+border-radius: 10px;
+color: rgb(160, 2, 160);
+font-family: "Onest", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+transition: all .2s ease-in-out;
+margin-bottom: 10px;
+}
+
+button:hover{
+    transform: scale(110%);
+    background:linear-gradient(135deg, black,rgb(255, 0, 255));
+    color: white;
+    box-shadow: 0px 2px 8px 0 white;
+    border: 1px solid white;
+
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 1em;
+}
+
+.correct{
+    color: rgb(68, 255, 0);
+}
+
+.incorrect{
+    color: red;
+}
+
+@media screen and (max-width: 600px){
+    
+.text-to-type{
+    font-size: 0.9em;
+}
+
+.container{
+    padding: 10px 30px;
+}
+
+.input-text{
+max-width: 100%;
+max-height: 500px;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+.result{
+    gap: 20px;
+    font-size: .8em;
+}
+}
+
+@media  screen and (max-width: 350px) {
+h1{
+    font-size: 1.2em;
+}
+.text-to-type{
+    font-size: .7em;
+}
+.input-text{
+    font-size: .6em;
+}
+button{
+    font-size: .6em;
+    padding: 10px;
+    width: 50px;
+    gap: 0;
+}
+
+.result{
+    font-size: .6em;
+}
+
+.background{
+    height: 400px;
+}
+}
