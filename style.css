@@ -158,6 +158,7 @@ button{
 @media screen and (max-height: 500px){
     .background{
         height: 100%;
-        padding:30px;
+        padding:290px;
+
     }
 }
