@@ -149,3 +149,10 @@ button{
     height: 400px;
 }
 }
+
+@media screen and (max-height: 500px){
+    .background{
+        height: 100%;
+        padding:30px;
+    }
+}
