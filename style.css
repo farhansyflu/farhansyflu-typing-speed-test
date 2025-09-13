@@ -134,6 +134,10 @@ h1{
 .input-text{
     font-size: .6em;
 }
+
+.container{
+    height: 80vh;
+}
 button{
     font-size: .6em;
     padding: 10px;
@@ -146,7 +150,8 @@ button{
 }
 
 .background{
-    height: 400px;
+    height: 100%;
+    padding: 20px;
 }
 }
 
